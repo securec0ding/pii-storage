@@ -1,0 +1,16 @@
+{
+  "name": "node-bad-passwords-vulnerable",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.17.1",
+    "csv-express": "^1.2.2",
+    "express": "^4.15.2",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.2",
+    "lusca": "^1.6.1",
+    "mongoose": "^4.9.8",
+    "morgan": "1.9.0",
+    "morgan-body": "2.4.5",
+    "pug": "^2.0.0-rc.4"
+  }
+}

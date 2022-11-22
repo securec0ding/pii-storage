@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .panel-heading
+    h2 JogTrax Stats
+  .panel-body
+    h3 Top joggers:
+    ul
+      each jogger in topJoggers
+        li #{jogger._id.name} - #{jogger.totalDistance} kms
+    h3 Most popular jogging location:
+    ul
+      li= popularLocation
+    h3 Total distance jogged:
+    ul
+      li #{totalDistance} kms

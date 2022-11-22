@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .panel-heading
+    h2 JogTrax Admin
+  .panel-body
+    h6
+      table
+        tr
+          th Date
+          th Name
+          th Email
+          th Distance
+          th Duration
+          th Location
+        each jog in jogs
+          tr
+            td= jog.date.toDateString()
+            td= jog.owner.name
+            td= jog.owner.email
+            td= jog.distance
+            td= jog.duration
+            td= jog.location

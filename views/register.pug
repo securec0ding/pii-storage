@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .panel-heading
+    h2 Join JogTrax!
+  .panel-body
+    form(action='/register', method='post')
+      input(type='hidden', name='_csrf', value=_csrf)
+      input#email(name='email', placeholder="Your email", required, autofocus)
+      input#name(name='name', placeholder="Your full name", required)
+      input#password(type='password', name='password', placeholder="Password", required)
+      input#passwordConf(type='password', name='passwordConf', placeholder="Confirm password", required)
+      input(type='submit', value='Register')
+    h4.text-center Already a member? 
+      a(href='/') Click here to log in.

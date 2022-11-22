@@ -1,0 +1,38 @@
+extends layout
+
+block scripts
+  script(src='js/api.js')
+
+block content
+  .panel-heading
+    h2.welcome Your jogging data
+    a.logout(href='/logout') Log out
+  .panel-body
+    #csrf.hidden= _csrf
+    h5
+      a(href='/') Ã¢ÂÂ Back to dashboard
+    h4 All jogs:
+    h5
+      table
+        tr
+          th Date
+          th Location
+          th Distance
+          th Duration
+        each jog in jogs
+          tr
+            td= jog.date.toDateString()
+            td= jog.location
+            td.text-right= jog.distance
+            td.text-right= jog.duration
+    if healthScores
+      h4 All health scores:
+      h5
+        table
+          tr
+            th Date
+            th Score
+          each healthScore in healthScores
+            tr
+              td= healthScore.date.toDateString()
+              td.text-right= healthScore.score

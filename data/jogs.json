@@ -1,0 +1,33 @@
+[{
+  "_id": {"$oid": "5bd7a88b955758cd78cc16c2"},
+  "owner": "5bd7a56cf7341acd03de44ae",
+  "date": "2018-04-01T00:20:00.000Z",
+  "distance": 3,
+  "duration": 30,
+  "location": "My neighborhood",
+  "notes": "Not my best."
+}, {
+  "_id": {"$oid": "5bd7a895955758cd78cc16c3"},
+  "owner": "5bd7a56cf7341acd03de44af",
+  "date": "2018-04-01T00:30:00.000Z",
+  "distance": 4,
+  "duration": 40,
+  "location": "Paris",
+  "notes": "Great run!"
+}, {
+  "_id": {"$oid": "5bd7a8a0955758cd78cc16c4"},
+  "owner": "5bd7a56cf7341acd03de44af",
+  "date": "2018-04-01T00:40:00.000Z",
+  "distance": 5,
+  "duration": 50,
+  "location": "North Shore High running track",
+  "notes": "Would run again."
+}, {
+  "_id": {"$oid": "5bd7a8a0955758cd78cc16c5"},
+  "owner": "5bd7a56cf7341acd03de44af",
+  "date": "2018-04-02T00:40:00.000Z",
+  "distance": 4.8,
+  "duration": 72,
+  "location": "North Shore High running track",
+  "notes": "Ran again."
+}]
